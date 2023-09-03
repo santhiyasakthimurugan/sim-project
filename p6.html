@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>firstpage</title>
+<style>
+fieldset
+{
+background-color:rgba(0,0,0,0.8);
+}
+i
+{
+font-size:45px;
+color:white;
+}
+div.grid
+{
+display:grid;
+grid-template-columns:auto auto;
+grid-gap:10px;
+border:1px solid red;
+padding:50px;
+background-image:url(sim.png);
+}
+div.form
+{
+margin:50px;
+}
+div.form1
+{
+margin:80px;
+}
+label
+{
+font-size:25px;
+color:beige;
+}
+input,button,textarea,select
+{
+font-size:25px;
+}
+</style>
+</head>
+<body>
+<fieldset>
+<i>Fill the form for New Sim : </i>
+</fieldset>
+<div class="grid">
+<div class="form">
+<form><table>
+<tr><td><label>Name</label></td>
+<td>: <input type="text" id="uname"></td></tr>
+<tr><td><label>Contact No. </label></td>
+<td>: <input type="phone number"></td></tr>
+<tr><td><label>E-mail id</label></td>
+<td>: <input type="mail" placeholder="example@example.com"></td></tr>
+<tr><td><label>Aadhar No. <label></td>
+<td>: <input type="aadhar number" placeholder="XXXX XXXX XXXX"></td></tr>
+<tr><td><label>Proof :</label></td>
+<td><input type="file" style="color:white;margin-left:4px;"></td></tr>
+<tr><td><label>Address:</label> </td><br>
+<td>&nbsp&nbsp<textarea rows="5" cols="21"></textarea></td></tr>
+</table></form></div>
+<div class="form1">
+<form><table>
+<tr><td><label>Sim Network : </label></td>
+<td><select>
+<option value="airtel">Airtel</option>
+<option value="jio">Jio</option>
+<option value="bsnl">BSNL</option>
+<option value="vodafone">Vodafone</option>
+</select></td></tr>
+<tr><td><label>High Speed  : </label></td>
+<td><select>
+<option value="2g">2G</option>
+<option value="3g">3G</option>
+<option value="4g">4G</option>
+<option value="5g">5G</option>
+</select></td></tr></table>
+<label>Do you want new number ? </label><br>
+<input type="radio" id="Yes" value="Yes"><label for="Yes">Yes</label>
+&nbsp&nbsp&nbsp<input type="radio" id="No" value="No"><label for="No">No</label><br>
+<label>If no, Enter your number</label><br>
+<table>
+<tr><td><label>Mob No. </label></td>
+<td>: <input type="phone number"></td></tr></table><br><br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button>Submit</button>&nbsp&nbsp&nbsp&nbsp&nbsp<button>Cancel</button>
+</form></div>
+</div>
+</body>
+</html>
